@@ -15,7 +15,7 @@ app.use(cors())
 
 // Routes
 app.get('/', (req,res)=>res.send("API Working"))
-app.post('/clerk', espress.json(), clerkwebhooks)
+app.post('/clerk', express.json(), clerkwebhooks)
 
 // PORT
 const PORT = process.env.PORT || 5000
